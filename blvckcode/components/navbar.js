@@ -12,9 +12,7 @@ function Navbar() {
                      <div className="">About</div>
                      <div className="">Partners</div>
                      </div>
-
                      <div><button className="top_button">Get Started</button></div>
-              
                  </div>
             </div>
         </>
