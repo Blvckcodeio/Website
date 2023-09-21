@@ -13,6 +13,7 @@ function Header() {
                         </div>
                         <p className='btn-text'>Turn Off</p>
                     </div>
+                    <text className="htext">like never before.</text>
                     </div>
                 </div>
             </div>

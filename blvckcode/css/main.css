@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 html, body{
     font-family: Oxygen;
@@ -20,7 +20,7 @@ html, body{
 .htext{
     color: #000;
     font-family: Oxygen;
-    font-size: 29px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -36,6 +36,7 @@ html, body{
     flex-shrink: 0;
     border-radius: 38px;
     background: #58C900;
+    margin-top: 5px;
 }
 .btn-text{
     color: white;
@@ -43,4 +44,9 @@ html, body{
 }
 .turn-ball{
     margin-top: 3px;
+}
+.bel-text{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
 }
