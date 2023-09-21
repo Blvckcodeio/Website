@@ -36,7 +36,7 @@ html, body{
 .htext{
     color: #000;
     font-family: Oxygen;
-    font-size: 64px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -44,17 +44,19 @@ html, body{
 
 .turn-on-btn{
     display: flex;
-    width: 142px;
-    height: 49px;
-    padding: 16px 24px;
+    width: 70px;
+    height: 5px;
+    padding: 14px 5px;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
     flex-shrink: 0;
     border-radius: 38px;
     background: #58C900;
 }
+.btn-text{
+    color: white;
+    font-size: 10px;
+}
 .turn-ball{
-    width: 33px;
-    height: 32px;
-    flex-shrink: 0;
+    margin-top: 3px;
 }
