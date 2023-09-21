@@ -1,10 +1,13 @@
+import Navbar from '../components/navbar'
 import Header from '../components/header'
-import Navbar from '@/components/navbar'
+
+
+
 function Home() {
   return (
     <>
+     <Navbar></Navbar> 
       <Header></Header>
-      <Navbar></Navbar>
     </>
   )
 }
