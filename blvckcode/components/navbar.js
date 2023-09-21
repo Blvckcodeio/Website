@@ -3,7 +3,7 @@ function Navbar() {
         <>
             <div className="navBar">
                  <div className="navCont">
-                     <div className="text1">
+                     <div className="bName">
                        Blvckcode.io 
                      </div>
                      <div className="navCont_flex">
