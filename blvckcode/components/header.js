@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import ball from "./svgs/ball.png"
+import ball from "./images/ball.png"
+import black from "./images/Black Smart.png"
+import white from "./images/White smart.png"
 
 function Header() {
     return(
@@ -9,11 +11,18 @@ function Header() {
                     <div className="bel-text">
                     <div className="turn-on-btn">
                         <div className="turn-ball">
-                            <Image src={ball} height= "20" width="20" alt="desc"/>
+                            <Image src={ball} height= "32" width="32" alt="desc"/>
                         </div>
-                        <p className='btn-text'>Turn Off</p>
                     </div>
                     <text className="htext">like never before.</text>
+                    </div>
+                    <div className="img-container">
+                        <div className="speakers">
+                            <Image src={black}  alt="black Speakers" />
+                        </div>
+                        <div className="speakers">
+                            <Image src={white}  alt="White Speakers" />
+                        </div>
                     </div>
                 </div>
             </div>
