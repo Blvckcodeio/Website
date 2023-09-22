@@ -33,7 +33,7 @@ function Header() {
                     <div className="img-container">
                         {animationVisible &&
                         <motion.div
-                        animate = {{x:600,y:-100,rotate:-20}}
+                        animate = {{x:900,y:-100,rotate:-20, scale:1.2}}
                         transition={{ease: "linear", type: "spring", stiffness: 90 }}
                         >
                         <div className="speakers">
@@ -43,7 +43,7 @@ function Header() {
 
                         }
                         <motion.div
-                        animate = {{x:-200,y:0,rotate:20}}
+                        animate = {{x:-300,y:-100,rotate:20, scale:1.2}}
                         transition={{ease: "linear", type: "spring", stiffness: 90 }}
                         >
                         <div className="w-speakers">
