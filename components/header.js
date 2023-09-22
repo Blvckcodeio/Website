@@ -10,6 +10,7 @@ function Header() {
     const [animationVisible, setAnimationVisible] = useState(false);
 
     useEffect(() => {
+        
         const delay = setTimeout(()=>{
             setAnimationVisible(true);
         }); //Delay of a second
