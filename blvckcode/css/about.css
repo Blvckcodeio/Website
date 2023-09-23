@@ -1,0 +1,71 @@
+.abt_cnt{
+    background: #303535;
+    min-width: 1400px;
+    height: 60vh;
+    position: relative;
+    overflow: hidden; 
+}
+
+.eclp_1{
+    position: absolute;
+    top: 4rem;
+    left:3rem;
+}
+
+.eclp_2{
+    position: absolute;
+    top: 13.5rem;
+    left: -10rem;  
+}
+
+.eclp_3{
+    position: absolute;
+    top: 5rem;
+    left:13rem;
+}
+
+.eclp_4{
+    position: absolute;
+    top: 4.3rem;
+    left:38rem;
+}
+
+.eclp_5{
+    position: absolute;
+    top: 18rem;
+    left:46rem;
+}
+
+.eclp_6{
+    position: absolute;
+    top: 3rem;
+    right:14rem;
+}
+
+.eclp_7{
+    position: absolute;
+    top: 20rem;
+    right: 8rem;  
+}
+
+.eclp_8{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;  
+}
+
+.abt_flex{
+    min-width: 1500px;
+    position: absolute;
+    padding: 10rem;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.abt_flex span{
+    font-size: 4rem;
+    display: block;
+}
