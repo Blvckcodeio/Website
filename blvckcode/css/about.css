@@ -1,10 +1,9 @@
 .abt_cnt{
     background: #303535;
-    min-width: 100vw;
+    min-width: 1400px;
     height: 60vh;
     position: relative;
-    overflow: hidden;  
-  /* filter:blur(4px); */
+    overflow: hidden; 
 }
 
 .eclp_1{
@@ -56,16 +55,14 @@
 }
 
 .abt_flex{
-    min-width: 80%;
-   /* border: 1px solid; */
+    min-width: 1500px;
     position: absolute;
-    margin: 10rem;
-    padding: 1rem;
+    padding: 10rem;
     display: flex;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-evenly; 
     align-items: center;
     color: #fff;
+    backdrop-filter: blur(10px);
 }
 
 .abt_flex span{
