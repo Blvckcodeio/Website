@@ -1,0 +1,74 @@
+.abt_cnt{
+    background: #303535;
+    min-width: 100vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;  
+  /* filter:blur(4px); */
+}
+
+.eclp_1{
+    position: absolute;
+    top: 4rem;
+    left:3rem;
+}
+
+.eclp_2{
+    position: absolute;
+    top: 13.5rem;
+    left: -10rem;  
+}
+
+.eclp_3{
+    position: absolute;
+    top: 5rem;
+    left:13rem;
+}
+
+.eclp_4{
+    position: absolute;
+    top: 4.3rem;
+    left:38rem;
+}
+
+.eclp_5{
+    position: absolute;
+    top: 18rem;
+    left:46rem;
+}
+
+.eclp_6{
+    position: absolute;
+    top: 3rem;
+    right:14rem;
+}
+
+.eclp_7{
+    position: absolute;
+    top: 20rem;
+    right: 8rem;  
+}
+
+.eclp_8{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;  
+}
+
+.abt_flex{
+    min-width: 80%;
+   /* border: 1px solid; */
+    position: absolute;
+    margin: 10rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    color: #fff;
+}
+
+.abt_flex span{
+    font-size: 4rem;
+    display: block;
+}
