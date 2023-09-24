@@ -1,7 +1,7 @@
 .abt_cnt{
     background: #303535;
     min-width: 1400px;
-    height: 60vh;
+    height: 40vh;
     position: relative;
     overflow: hidden; 
 }
@@ -55,7 +55,8 @@
 }
 
 .abt_flex{
-    min-width: 1500px;
+    min-width: 100vw;
+    height: 40vh;
     position: absolute;
     padding: 10rem;
     display: flex;

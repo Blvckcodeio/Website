@@ -20,7 +20,7 @@ html, body{
 
 .hContainer{
     max-width: 100vw;
-    height: 100vw;
+    height: 1078px;
     /*changed margin to padding --> affects the navbar*/    
 }
 
@@ -69,4 +69,13 @@ html, body{
 
 .img-container{
     display: flex;
+}
+
+.w-speakers{
+    margin-top: 20px;
+    margin-left: 1500px;
+}
+.speakers{
+    margin-top: 20px;
+    margin-left: -600px;
 }
