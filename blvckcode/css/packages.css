@@ -1,0 +1,44 @@
+.packages-container{
+    padding-top: 200px;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.packages-container h3{
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+.pakages{
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.package-text{
+    text-align: left;
+    font-size: 20px;
+}
+.package-text h3{
+    text-align: left;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.package-btn{
+    display: inline-flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #58C900;
+    color: white;
+    margin-top:50px ;
+    height: 90px;
+    width: 250px;
+}

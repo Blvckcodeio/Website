@@ -7,7 +7,6 @@ import { motion, useScroll } from "framer-motion"
 function AboutUs() {
     return(
         <>
-
             <div className="abt_cnt">
                
                 <div className="item eclp_1"><Image src={object} height= "27" width="27" alt="desc"></Image></div>
@@ -25,7 +24,6 @@ function AboutUs() {
                <h3> Satisfied Clients <span>80+</span></h3>
                <Image src={Team}/>
                </div>
-
             </div>
         </>
     )
