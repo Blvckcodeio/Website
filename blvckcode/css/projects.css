@@ -1,0 +1,51 @@
+.projects-container{
+    height: 500px;
+    flex-shrink: 0;
+    background: #58C900;
+    display: flex;
+    padding-left: 300px;
+    color: white;
+}
+
+.projects-text h3{
+    text-align: left;
+    padding-top: 110px;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.projects-text{
+    width: 365px;
+}
+.video-carousel{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.video-card{
+    width: 364px;
+    height: 100%;
+    border-radius: 49px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.video-card:nth-child(1) {
+    top: 0;
+    right: 280px;
+    background-color: white ;
+  }
+  
+  .video-card:nth-child(2) {
+    top: 0; /* Adjust the top position to overlap as desired */
+    right: 100px; /* Adjust the left position to overlap as desired */
+    background-color: grey ;
+  }
+  
+  .video-card:nth-child(3) {
+    top: 0px; /* Adjust the top position to overlap as desired */
+    right: -100px; /* Adjust the left position to overlap as desired */
+    background-color: white ;
+
+  }

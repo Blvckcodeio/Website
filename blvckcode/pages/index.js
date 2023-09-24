@@ -2,6 +2,7 @@ import Navbar from '../components/navbar'
 import Header from '../components/header'
 import AboutUs from '../components/aboutus'
 import Packages from '../components/ourpackages'
+import Projects from '../components/projects'
 
 
 
@@ -12,6 +13,7 @@ function Home() {
       <Header></Header>
       <AboutUs></AboutUs>
       <Packages></Packages>
+      <Projects></Projects>
     </>
   )
 }
