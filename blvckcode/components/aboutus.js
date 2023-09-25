@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Team from "./images/team-profile.svg"
 import object from "./images/object.svg"
+import { motion, useScroll } from "framer-motion"
 
 
 function AboutUs() {
@@ -8,7 +9,7 @@ function AboutUs() {
         <>
 
             <div className="abt_cnt">
-                
+               
                 <div className="item eclp_1"><Image src={object} height= "27" width="27" alt="desc"></Image></div>
                 <div className="item eclp_2"><Image src={object} height= "250" width="250" alt="desc"></Image></div>
                 <div className="item eclp_3"><Image src={object} height= "300" width="300" alt="desc"></Image></div>
@@ -17,7 +18,6 @@ function AboutUs() {
                 <div className="item eclp_6"><Image src={object} height= "120" width="120" alt="desc"></Image></div>
                 <div className="item eclp_7"><Image src={object} height= "27" width="27" alt="desc"></Image></div>
                 <div className="item eclp_8"><Image src={object} height= "130" width="130" alt="desc"></Image></div>
-                
 
                 <div className="abt_flex">
                <h3>Completed Projects <span>130+</span></h3>
