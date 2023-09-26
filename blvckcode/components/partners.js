@@ -4,6 +4,7 @@ import Tplink from "../components/images/tplink-colored-1.svg"
 import Credpal from "../components/images/credpal-bg-2.svg"
 
 
+
 function Partners() {
     return(
         <>
@@ -14,10 +15,10 @@ function Partners() {
                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
                        </div>
                 <div className="partners_img">
-                    <Image src={Tuya} alt="Partners"/>
-                    <Image src={Tplink} alt="Partners"/>
-                    <Image src={Credpal} alt="Partners"/>
-                    <Image src={Credpal} alt="Partners"/>
+                   <div className="Partners_img_flex"> <Image src={Tuya} alt="Partners"/> </div>
+                   <div className="Partners_img_flex"> <Image src={Tplink} alt="Partners"/> </div>
+                   <div className="Partners_img_flex"> <Image src={Credpal} alt="Partners"/> </div>
+                   <div className="Partners_img_flex"> <Image src={Credpal} alt="Partners"/> </div>
                 </div>
                 </div>
             </div>
