@@ -3,6 +3,7 @@ import '../css/main.css'
 import '../css/about.css'
 import '../css/packages.css'
 import '../css/projects.css'
+import '../css/Partners.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

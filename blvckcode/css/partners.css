@@ -1,0 +1,34 @@
+.partners_cont{
+    background: #303131;
+    width: 100vw;
+    height: 500px;
+    color: #fff;
+    
+}
+.partners_flex{
+    display: flex;
+    margin: 0 250px;
+    padding: 155px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners_text{
+    width: 30rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.partners_img{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.partners_img img {
+    background-color: #edf1f524;
+}

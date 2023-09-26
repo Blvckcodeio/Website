@@ -3,6 +3,7 @@ import Header from '../components/header'
 import AboutUs from '../components/aboutus'
 import Packages from '../components/ourpackages'
 import Projects from '../components/projects'
+import Partners from '../components/partners'
 
 
 
@@ -14,6 +15,7 @@ function Home() {
       <AboutUs></AboutUs>
       <Packages></Packages>
       <Projects></Projects>
+      <Partners></Partners>
     </>
   )
 }
