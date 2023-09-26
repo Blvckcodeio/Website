@@ -4,6 +4,7 @@ import AboutUs from '../components/aboutus'
 import Packages from '../components/ourpackages'
 import Projects from '../components/projects'
 import Partners from '../components/partners'
+import Testimonials from '@/components/testimonials'
 
 
 
@@ -16,6 +17,7 @@ function Home() {
       <Packages></Packages>
       <Projects></Projects>
       <Partners></Partners>
+      <Testimonials></Testimonials>
     </>
   )
 }
