@@ -6,11 +6,13 @@
     align-items: center;
 }
 
+.footer_brandN{
+    padding-right: 20px;
+}
+
 .footer_socials{
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    
+    align-items: center;  
 }
 
 .footer_text{

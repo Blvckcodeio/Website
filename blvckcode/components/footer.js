@@ -9,10 +9,10 @@ function Footer() {
           <div className="footer_cont">
 
                  <div className="footer_socials">
-                     <div className="bName"> <h4>Blvckcode.io</h4></div>
-                     <div className="Partners_img_flex"> <Image src={insta} alt="Partners"/> </div>
-                     <div className="Partners_img_flex"> <Image src={linked} alt="Partners"/> </div>
-                     <div className="Partners_img_flex"> <Image src={twitter} alt="Partners"/> </div>
+                     <div className="footer_brandN"> <h4>Blvckcode.io</h4></div>
+                     <div className="footer_img"> <Image src={insta} alt="Partners"/> </div>
+                     <div className="footer_img"> <Image src={linked} alt="Partners"/> </div>
+                     <div className="footer_img"> <Image src={twitter} alt="Partners"/> </div>
                      </div>
                     
                      <div className="footer_text">
