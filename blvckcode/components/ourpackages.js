@@ -7,6 +7,7 @@ function Packages() {
             <div className="packages-container">
                 <h3>Our pakages</h3>
                 <div className="pakages">
+                    
                     <div className="package-img">
                         <Image src={speakers} width={400} height={300} alt="Speakers"/>
                     </div>
