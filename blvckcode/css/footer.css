@@ -1,0 +1,20 @@
+.footer_cont{
+    background: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_socials{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.footer_text{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}

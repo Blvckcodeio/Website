@@ -5,6 +5,7 @@ import '../css/packages.css'
 import '../css/projects.css'
 import '../css/Partners.css'
 import '../css/testimonials.css'
+import '../css/footer.css'
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
