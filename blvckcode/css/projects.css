@@ -24,7 +24,7 @@
     overflow-y: scroll;
 }
 .video-card{
-    width: 364px;
+    width: 500px;
     height: 100%;
     border-radius: 49px;
     position: absolute;
@@ -33,13 +33,13 @@
 }
 .video-card:nth-child(1) {
     top: 0;
-    right: 280px;
+    right: 500px;
     background-color: white ;
   }
   
   .video-card:nth-child(2) {
     top: 0; /* Adjust the top position to overlap as desired */
-    right: 100px; /* Adjust the left position to overlap as desired */
+    right: 200px; /* Adjust the left position to overlap as desired */
     background-color: grey ;
   }
   
