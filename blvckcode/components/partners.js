@@ -9,7 +9,6 @@ function Partners() {
     return(
         <>
             <div className="partners_cont">
-                <div className="partners_flex">
                 <div className="partners_text">
                     <h2>Our Partners</h2>
                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
@@ -19,7 +18,6 @@ function Partners() {
                    <div className="Partners_img_flex"> <Image src={Tplink} alt="Partners"/> </div>
                    <div className="Partners_img_flex"> <Image src={Credpal} alt="Partners"/> </div>
                    <div className="Partners_img_flex"> <Image src={Credpal} alt="Partners"/> </div>
-                </div>
                 </div>
             </div>
         </>
