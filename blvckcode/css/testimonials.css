@@ -29,8 +29,16 @@
     background-color: white;
     text-align: left;
     padding: 60px;
+    position: relative;
 }
 .test-card h3{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.quote{
+    position: absolute;
+    top: -20px;
+}
+.stars{
+    margin-bottom: 10px;
 }

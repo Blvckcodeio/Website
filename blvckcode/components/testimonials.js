@@ -1,3 +1,9 @@
+import Image from "next/image"
+import quote1 from "../components/images/qoute.svg"
+import quote2 from "../components/images/quote2.svg"
+import quote3 from "../components/images/quote3.svg"
+import star from "../components/images/stars.svg"
+
 function Testimonials() {
     return(
         <div className="test-container">
@@ -7,8 +13,11 @@ function Testimonials() {
             </div>
             <div className="test-cards">
                 <div className="test-card">
+                    <div className="quote">
+                    <Image src={quote1} alt="quote green"/>
+                    </div>
                     <h3>Mitch Danieals</h3>
-                    <div></div>
+                    <div className="stars"><Image src={star} alt="stars"/></div>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada 
@@ -17,8 +26,11 @@ function Testimonials() {
                     </p>
                 </div>
                 <div className="test-card">
+                <div className="quote">
+                    <Image src={quote2} alt="quote blue"/>
+                    </div>
                     <h3>Mitch Danieals</h3>
-                    <div></div>
+                    <div className="stars"><Image src={star} alt="stars"/></div>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada 
@@ -27,8 +39,11 @@ function Testimonials() {
                     </p>
                 </div>
                 <div className="test-card">
+                    <div className="quote">
+                    <Image src={quote3} alt="quote purple"/>
+                    </div>
                     <h3>Mitch Danieals</h3>
-                    <div></div>
+                    <div className="stars"><Image src={star} alt="stars"/></div>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada 
