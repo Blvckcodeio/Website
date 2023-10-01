@@ -21,12 +21,26 @@
     gap: 5rem;    
 }
 
-.top_button{
+.nav_button{
     background-color: #000;
     color:#fff;
     border-radius: 10px;
     padding: 1rem;
     border: none;
-    font-weight: bold;
-    
+    font-weight: bold;  
+}
+
+.navPages{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navPages:hover{
+    background-color: #383737;
+    color: #fff;
+}
+
+.nav_button:hover{
+    background-color: #939191;
+    color: #3a3a3a;
 }

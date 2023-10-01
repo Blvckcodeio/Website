@@ -27,10 +27,12 @@
     gap: 3rem;
     justify-content: space-evenly;
     align-items: center;
-  
 }
 
 .Partners_img_flex{
     background-color: #ffffff12;
     border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    height: 165px;
 }

@@ -7,12 +7,12 @@ function Navbar() {
                        Blvckcode.io 
                      </div>
                      <div className="navCont_flex">
-                     <div className="">Features</div>
-                     <div className="">Packages</div>
-                     <div className="">About</div>
-                     <div className="">Partners</div>
+                     <div className="navPages">Features</div>
+                     <div className="navPages">Packages</div>
+                     <div className="navPages">About</div>
+                     <div className="navPages">Partners</div>
                      </div>
-                     <div><button className="top_button">Get Started</button></div>
+                     <div><button className="nav_button">Get Started</button></div>
                  </div>
             </div>
         </>
