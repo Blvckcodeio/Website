@@ -18,7 +18,7 @@ function Header() {
 
     })
 
-    
+
     return(
             <div className="hContainer">
                 <div className="htContainer">
@@ -35,7 +35,7 @@ function Header() {
                         {animationVisible &&
                         <motion.div
                         animate = {{x:900,y:-100,rotate:-20, scale:1.2}}
-                        transition={{ease: "linear", type: "spring", stiffness: 90 }}
+                        transition={{ease: "linear", type: "spring", stiffness: 90, delay: 0.2 }}
                         >
                         <div className="speakers">
                             <Image src={black} width="300" height="300" alt="black Speakers" />
@@ -45,7 +45,7 @@ function Header() {
                         }
                         <motion.div
                         animate = {{x:-400,y:200,rotate:-10, scale:1.2}}
-                        transition={{ease: "linear", type: "spring", stiffness: 90 }}
+                        transition={{ease: "linear", type: "spring", stiffness: 90, delay: 0.2 }}
                         >
                         <div className="w-speakers">
                             <Image src={white} width="300" height="300" alt="White Speakers" />
