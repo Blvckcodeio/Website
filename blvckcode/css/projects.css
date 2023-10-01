@@ -16,6 +16,7 @@
 .projects-text{
     width: 365px;
 }
+
 .video-carousel{
     display: flex;
     width: 100%;
@@ -30,6 +31,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 .video-card:nth-child(1) {
     top: 0;

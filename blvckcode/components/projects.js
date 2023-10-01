@@ -1,5 +1,6 @@
 import Image from "next/image"
 import play from "./images/play-button.png"
+import { motion } from "framer-motion"
 
 function Projects() {
     return(
@@ -14,14 +15,22 @@ function Projects() {
                 </p>
             </div>
             <div className="video-carousel">
+           
                 <div className="video-card">
+                <motion.div whileHover={{ scale:1.1}}>
                     <Image className="play" src={play} width={60} height={60} alt="play"/>
+                </motion.div>
+
+                </div> 
+                <div className="video-card">
+                    <motion.div whileHover={{ scale:1.1}}>
+                        <Image className="play" src={play} width={60} height={60} alt="play"/>
+                    </motion.div>                
                 </div>  
                 <div className="video-card">
-                    <Image className="play" src={play} width={60} height={60} alt="play"/>
-                </div>  
-                <div className="video-card">
-                    <Image className="play" src={play} width={60} height={60} alt="play"/>
+                    <motion.div whileHover={{ scale:1.1}}>
+                        <Image className="play" src={play} width={60} height={60} alt="play"/>
+                    </motion.div>           
                 </div>  
             </div>
         </div>

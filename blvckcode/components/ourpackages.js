@@ -16,7 +16,7 @@ function Packages() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc 
                     consequat interdum varius sit amet. Habitant morbi tristique senectus et netus 
-                    et malesuada fames ac.
+                    et malesuada fames.
                     <div className="package-btn">
                         <p>Get Started</p>
                     </div>
@@ -28,7 +28,7 @@ function Packages() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc 
                     consequat interdum varius sit amet. Habitant morbi tristique senectus et netus 
-                    et malesuada fames ac.
+                    et malesuada fames .
                     <div className="package-btn">
                         <p>Get Started</p>
                     </div>
@@ -46,7 +46,7 @@ function Packages() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc 
                     consequat interdum varius sit amet. Habitant morbi tristique senectus et netus 
-                    et malesuada fames ac.
+                    et malesuada fames .
                     <div className="package-btn">
                         <p>Get Started</p>
                     </div>
