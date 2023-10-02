@@ -43,7 +43,7 @@ function Header() {
                         }}
                         initial="hidden"
                         animate={mainControls}
-                        transition={ {ease: "linear", type: "spring",duration: 0.5, delay:0.25}}
+                        transition={ {ease: "easein", stiffness: 15 ,type: "spring",duration: 1}}
                         >
                             <Image src={black} width="300" height="300" alt="black Speakers" />
                         </motion.div>
@@ -56,7 +56,7 @@ function Header() {
                             }}
                             initial="hidden"
                             animate={mainControls}
-                            transition={ {ease: "linear", type: "spring",duration: 0.5, delay:0.25}}
+                            transition={ {ease: "easein", type: "spring",stiffness: 15 ,duration: 1}}
                         >
                             <Image src={white} width="300" height="300" alt="White Speakers" />
                         </motion.div>
