@@ -10,6 +10,8 @@ function Header() {
 
     const [darkmode, setDarkeMode] = useState('hContainer')
     const [darkmodeText, setTextDarkeMode] = useState('htext')
+    const [darkbut, setDarkbut] = useState('turn-on-btn')
+    const [ballDark, setBallDark] = useState('turn-ball')
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
@@ -20,11 +22,13 @@ function Header() {
         if(darkmode === 'hContainer'){
             setDarkeMode('hContainer-dark')
             setTextDarkeMode('htext-dark')
-
+            setDarkbut('turn-on-btn-dark')
+            setBallDark('turn-ball-dark')
         }else{
             setDarkeMode('hContainer')
             setTextDarkeMode('htext')
-
+            setDarkbut('turn-on-btn')
+            setBallDark('turn-ball')
         }
         
     }
@@ -41,9 +45,9 @@ function Header() {
                 <div className="htContainer">
                     <text className={darkmodeText}>Experience smart living</text>
                     <div className="bel-text">
-                    <div className="turn-on-btn" onClick={handleButtonClick}>
-                        <div className="turn-ball">
-                            <Image src={ball} height= "32" width="32" alt="desc"/>
+                    <div className= {darkbut} onClick={handleButtonClick}>
+                        <div className={ballDark}>
+                               <Image src={ball} height= "32" width="32" alt="desc"/>
                         </div>
                     </div>
                     <text className={darkmodeText}>like never before.</text>
