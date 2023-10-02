@@ -3,15 +3,31 @@ import ball from "./images/ball.png"
 import black from "./images/Black Smart.png"
 import white from "./images/White smart.png"
 import {motion, useInView, useAnimation} from "framer-motion"
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 function Header() {
+
+    const [darkmode, setDarkeMode] = useState('hContainer')
+    const [darkmodeText, setTextDarkeMode] = useState('htext')
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
 
     const mainControls = useAnimation();
+
+    const handleButtonClick = () => {
+        if(darkmode === 'hContainer'){
+            setDarkeMode('hContainer-dark')
+            setTextDarkeMode('htext-dark')
+
+        }else{
+            setDarkeMode('hContainer')
+            setTextDarkeMode('htext')
+
+        }
+        
+    }
 
     useEffect(() => {
         if(isInView){
@@ -21,16 +37,16 @@ function Header() {
 
 
     return(
-            <div className="hContainer">
+            <div className={darkmode}>
                 <div className="htContainer">
-                    <text className="htext">Experience smart living</text>
+                    <text className={darkmodeText}>Experience smart living</text>
                     <div className="bel-text">
-                    <div className="turn-on-btn">
+                    <div className="turn-on-btn" onClick={handleButtonClick}>
                         <div className="turn-ball">
                             <Image src={ball} height= "32" width="32" alt="desc"/>
                         </div>
                     </div>
-                    <text className="htext">like never before.</text>
+                    <text className={darkmodeText}>like never before.</text>
                     </div>
                     <div ref={ref} className="img-container">
                         

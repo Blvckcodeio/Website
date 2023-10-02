@@ -17,11 +17,18 @@ html {
 html, body{
     font-family: Oxygen;
 }
-
 .hContainer{
     max-width: 100vw;
     height: 1078px;
-    /*changed margin to padding --> affects the navbar*/    
+    /*changed margin to padding --> affects the navbar*/ 
+ 
+}
+
+.hContainer-dark{
+    max-width: 100vw;
+    height: 1078px;
+    /*changed margin to padding --> affects the navbar*/ 
+    background: #303030; 
 }
 
 .htContainer{
@@ -31,7 +38,6 @@ html, body{
     align-items: center;
     flex-direction: column;   
     padding-top: 200px;
- 
 }
 .htext{
     color: #000;
@@ -41,7 +47,14 @@ html, body{
     font-weight: 700;
     line-height: normal;
 }
-
+.htext-dark{
+    color: #fff;
+    font-family: Oxygen;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 .turn-on-btn{
     display: flex;
     width: 90px;
