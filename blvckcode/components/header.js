@@ -2,21 +2,22 @@ import Image from 'next/image'
 import ball from "./images/ball.png"
 import black from "./images/Black Smart.png"
 import white from "./images/White smart.png"
-import { motion } from "framer-motion"
-import React, { useEffect, useState } from 'react';
+import {motion, useInView, useAnimation} from "framer-motion"
+import React, { useEffect, useRef } from 'react';
 
 
 function Header() {
-    const [animationVisible, setAnimationVisible] = useState(false);
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once:true});
+
+    const mainControls = useAnimation();
 
     useEffect(() => {
-        const delay = setTimeout(()=>{
-            setAnimationVisible(true);
-        }); //Delay of a second
-
-        return () => clearTimeout(delay);
-
-    })
+        if(isInView){
+            mainControls.start("visible")
+        }
+    }, [isInView])
 
 
     return(
@@ -31,26 +32,36 @@ function Header() {
                     </div>
                     <text className="htext">like never before.</text>
                     </div>
-                    <div className="img-container">
-                        {animationVisible &&
-                        <motion.div
-                        animate = {{x:900,y:-100,rotate:-20, scale:1.2}}
-                        transition={{ease: "linear", type: "spring", stiffness: 90, delay: 0.2 }}
-                        >
+                    <div ref={ref} className="img-container">
+                        
                         <div className="speakers">
+                        <motion.div
+
+                        variants={{
+                            hidden: {opacity:0, x:-500,y:0, scale:1.0},
+                            visible: {opacity:1, x:50,y:70, scale:1.2}
+                        }}
+                        initial="hidden"
+                        animate={mainControls}
+                        transition={ {ease: "linear", type: "spring",duration: 0.5, delay:0.25}}
+                        >
                             <Image src={black} width="300" height="300" alt="black Speakers" />
+                        </motion.div>
                         </div>
+                        <div className="w-speakers">
+                        <motion.div
+                            variants={{
+                                hidden: {opacity:0, x:500,y:0, scale:1.0},
+                                visible: {opacity:1, x:-0,y:250, scale:1.2}
+                            }}
+                            initial="hidden"
+                            animate={mainControls}
+                            transition={ {ease: "linear", type: "spring",duration: 0.5, delay:0.25}}
+                        >
+                            <Image src={white} width="300" height="300" alt="White Speakers" />
                         </motion.div>
 
-                        }
-                        <motion.div
-                        animate = {{x:-400,y:200,rotate:-10, scale:1.2}}
-                        transition={{ease: "linear", type: "spring", stiffness: 90, delay: 0.2 }}
-                        >
-                        <div className="w-speakers">
-                            <Image src={white} width="300" height="300" alt="White Speakers" />
                         </div>
-                        </motion.div>
                     </div>
                 </div>
             </div>

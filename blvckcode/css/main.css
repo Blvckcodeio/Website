@@ -70,11 +70,3 @@ html, body{
 .img-container{
     display: flex;
 }
-
-.w-speakers{
-    margin-top: 20px;
-}
-.speakers{
-    margin-top: 20px;
-    margin-left: -600px;
-}
