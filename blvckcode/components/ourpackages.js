@@ -2,19 +2,19 @@ import Image from "next/image"
 import speakers from "./images/Google-home.png"
 import Reveal from "./utils/Reveal"
 
-function Packages() {
+function Packages({packages, packagesText}) {
     
 
     return(
         <>
-            <div className="packages-container">
+            <div className={packages}>
                 <h3>Our pakages</h3>
                 <div className="pakages">
                     
                     <div className="package-img">
                         <Image src={speakers} width={400} height={300} alt="Speakers"/>
                     </div>
-                    <div className="package-text">
+                    <div className={packagesText}>
                     <Reveal>
                     <h3>Helios Package</h3>
                     </Reveal>
@@ -30,7 +30,7 @@ function Packages() {
                     </div>
                 </div>
                 <div className="pakages">
-                    <div className="package-text">
+                    <div className={packagesText}>
                     <Reveal>
                     <h3>Helios Package</h3>
                     </Reveal>
@@ -52,7 +52,7 @@ function Packages() {
                     <div className="package-img">
                         <Image src={speakers} width={400} height={300} alt="Speakers"/>
                     </div>
-                    <div className="package-text">
+                    <div className={packagesText}>
                     <Reveal>
                     <h3>Helios Package</h3>
                     </Reveal>

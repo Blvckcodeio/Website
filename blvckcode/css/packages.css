@@ -9,6 +9,24 @@
     align-items: center;
     text-align: center;
 }
+.packages-container-dark{
+    padding-top: 150px;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #303030; 
+}
+.packages-container-dark h3{
+    font-size: 45px;
+    padding-bottom: 80px;
+    color: white;
+}
+
 .packages-container h3{
     font-size: 45px;
     padding-bottom: 80px;
@@ -22,6 +40,11 @@
 .package-text{
     text-align: left;
     font-size: 20px;
+}
+.package-text-dark{
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
 }
 .package-text h3{
     text-align: left;

@@ -6,16 +6,30 @@ import Projects from '../components/projects'
 import Partners from '../components/partners'
 import Testimonials from '@/components/testimonials'
 import Footer from '../components/footer'
+import React, { useState } from 'react';
 
 
 
 function Home() {
+
+  const [packages, setPackages] = useState('packages-container')
+  const [packagesText, setPackagesText] = useState('package-text')
+
+  // Function to update the packages state
+  const updatePackages = (newValue) => {
+    setPackages(newValue);
+  }
+
+  const updatePackagesText = (newValue) => {
+    setPackagesText(newValue);
+  }
+
   return (
     <>
      <Navbar></Navbar> 
-      <Header></Header>
+      <Header updatePackages={updatePackages} updatePackagesText={updatePackagesText}></Header>
       <AboutUs></AboutUs>
-      <Packages></Packages>
+      <Packages packages={packages} packagesText={packagesText}></Packages>
       <Projects></Projects>
       <Partners></Partners>
       <Testimonials></Testimonials>

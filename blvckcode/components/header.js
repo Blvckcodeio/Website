@@ -6,13 +6,12 @@ import {motion, useInView, useAnimation} from "framer-motion"
 import React, { useEffect, useRef, useState } from 'react';
 
 
-function Header() {
+function Header({updatePackages, updatePackagesText}) {
 
     const [darkmode, setDarkeMode] = useState('hContainer')
     const [darkmodeText, setTextDarkeMode] = useState('htext')
     const [darkbut, setDarkbut] = useState('turn-on-btn')
     const [ballDark, setBallDark] = useState('turn-ball')
-    const [packages, setPackage] = useState('packages-container')
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
@@ -25,14 +24,15 @@ function Header() {
             setTextDarkeMode('htext-dark')
             setDarkbut('turn-on-btn-dark')
             setBallDark('turn-ball-dark')
-            setPackage('packages-container-dark')
+            updatePackages('packages-container-dark')
+            updatePackagesText('package-text-dark')
+
         }else{
             setDarkeMode('hContainer')
             setTextDarkeMode('htext')
             setDarkbut('turn-on-btn')
             setBallDark('turn-ball')
-            setPackage('packages-container')
-
+            updatePackagesText('package-text')
         }
         
     }
