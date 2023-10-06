@@ -5,23 +5,23 @@ html {
     box-sizing: border-box;
   }
   
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-  * {
+* {
     margin: 0;
     padding: 0;
-  }
+}
 
 html, body{
     font-family: Oxygen;
 }
+
 .hContainer{
     max-width: 100vw;
     height: 1078px;
     /*changed margin to padding --> affects the navbar*/ 
- 
 }
 
 .hContainer-dark{
@@ -96,7 +96,6 @@ html, body{
     margin-top: 3px;
     margin-left: 45px;
     transition: margin-left 0.3s ease;
-
 }
 .bel-text{
     display: flex;

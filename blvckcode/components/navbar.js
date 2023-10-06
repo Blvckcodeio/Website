@@ -1,8 +1,9 @@
-function Navbar() {
+
+function Navbar({navbar, navButton}) {
+  
     return(
         <>
-            <div className="navBar">
-                 <div className="navCont">
+            <div className={navbar}>
                      <div className="bName">
                        Blvckcode.io 
                      </div>
@@ -12,8 +13,7 @@ function Navbar() {
                      <div className="navPages">About</div>
                      <div className="navPages">Partners</div>
                      </div>
-                     <div><button className="nav_button">Get Started</button></div>
-                 </div>
+                     <div><button className={navButton}>Get Started</button></div>
             </div>
         </>
     )
