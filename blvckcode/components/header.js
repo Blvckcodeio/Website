@@ -3,10 +3,10 @@ import ball from "./images/ball.png"
 import black from "./images/Black Smart.png"
 import white from "./images/White smart.png"
 import {motion, useInView, useAnimation} from "framer-motion"
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 
 
-function Header({updatePackages, updatePackagesText}) {
+function Header({updatePackages, updatePackagesText, updateFooter, updateFooterText, updateFooterSocials, updateNavBar, updateNavButton}) {
 
     const [darkmode, setDarkeMode] = useState('hContainer')
     const [darkmodeText, setTextDarkeMode] = useState('htext')
@@ -26,6 +26,11 @@ function Header({updatePackages, updatePackagesText}) {
             setBallDark('turn-ball-dark')
             updatePackages('packages-container-dark')
             updatePackagesText('package-text-dark')
+            updateFooter('footer_cont_dark')
+            updateFooterText('footer_text_dark')
+            updateFooterSocials('footer_socials_dark')
+            updateNavBar('navBar_dark')
+            updateNavButton('nav_button_dark')
 
         }else{
             setDarkeMode('hContainer')
@@ -34,8 +39,13 @@ function Header({updatePackages, updatePackagesText}) {
             setBallDark('turn-ball')
             updatePackages('packages-container')
             updatePackagesText('package-text')
+            updateFooter('footer_cont')
+            updateFooterText('footer_text')
+            updateFooterSocials('footer_socials')
+            updateNavBar('navBar')
+            updateNavButton('nav_button')
         }
-        
+            
     }
 
     useEffect(() => {
@@ -58,7 +68,6 @@ function Header({updatePackages, updatePackagesText}) {
                     <text className={darkmodeText}>like never before.</text>
                     </div>
                     <div ref={ref} className="img-container">
-                        
                         <div className="speakers">
                         <motion.div
 
