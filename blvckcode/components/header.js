@@ -32,6 +32,7 @@ function Header({updatePackages, updatePackagesText}) {
             setTextDarkeMode('htext')
             setDarkbut('turn-on-btn')
             setBallDark('turn-ball')
+            updatePackages('packages-container')
             updatePackagesText('package-text')
         }
         
